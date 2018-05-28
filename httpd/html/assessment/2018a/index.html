@@ -1,0 +1,73 @@
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN " "http://www.w3.org/TR/html4/strict.dtd ">    
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link rel="stylesheet" type="text/css" href="./r.css">
+<script type='text/javascript' src='./jquery-1.11.1.min.js'></script>
+<script type='text/javascript'>
+function slideSwitch() {
+var $active = $('#slideshow img.active');
+if ( $active.length == 0 ) $active = $('#slideshow img:last');
+var $next = $active.next().length ? $active.next() : $('#slideshow img:first');
+$active.addClass('last-active');
+$next.css({opacity: 0.0}).addClass('active').animate({opacity: 1.0}, 1000, function() { $active.removeClass('active last-active'); });  
+}
+$(function() { setInterval( 'slideSwitch()', 3000 ); });
+</script>
+   <title>2018年度前期授業評価アンケート-トップページ</title> 
+</head>
+
+<body>
+<div id="container">
+<div id="main">
+ <h1 class=title>2018年度前期授業評価アンケート</h1>
+<center>
+<table id="margin" border="3">
+<tr>
+  <td id="menu"><a href="./index.html">トップページ</a></td>
+<td id="menu"><a href="./purpose.php">実施目的・注意事項</a></td>
+<td id="menu"><a href="./subjects.php">対象科目</a></td>
+<td id="menu"><a href="./process.php">回答の手順</a></td>
+<td id="menu"><a href="./enq.php">設問一覧</a></td>
+<td id="menu"><a href="./result/output.php">現在の回答状況</a></td>
+</tr>
+</table>
+
+<p></p>
+
+<!--<font size="6" color="red">〜授業評価アンケート新時代へ突入〜<br>  
+ <a href="./manual.php"><font color=red>[アンケート開始の前に必ずお読み下さい]</font></a></font>-->
+<a href="./manual.php"><font size="6" color=red>[アンケート開始の前に必ずお読み下さい]</font></a>
+<br>
+ <font size="10"><a href="https://mitsukawa-no-MacBook-Pro.local/assessment/2018a/ssl/index.php" target="question" onclick="window.open(this.href, 'quiestion', 'width=820, menubar=no, toolbar=no, scrollbars=yes'); return false;">[ アンケート開始 ]</a></font><br>
+
+
+ <!-- <font size="10"><del>[アンケート開始]</del></font> -->
+<br>
+<!-- <p>2014年前期のアンケートは終了しました。ご協力ありがとうございました。</p> -->
+<p id='slideshow'>
+<img src='./img/a0.jpg' width='540' height='401' alt='' class='active' ></img>
+<img src='./img/a1.jpg' width='540' height='401' alt='' ></img>
+<img src='./img/a2.jpg' width='540' height='401' alt='' ></img>
+<img src='./img/a3.jpg' width='540' height='401' alt='' ></img>
+<img src='./img/a4.jpg' width='540' height='401' alt='' ></img>
+<img src='./img/a5.jpg' width='540' height='401' alt='' ></img>
+<img src='./img/a6.jpg' width='540' height='401' alt='' ></img>
+<p>
+
+</center>
+
+ <hr>
+<a href="http://mitsukawa-no-MacBook-Pro.local/assessment/">R班トップページ</a>
+<br>
+<p class="copyright">2018年度情報工学実験3 調査と解析(R)班
+<br>
+<a href="mailto:r-inquiry@ms.ie.u-ryukyu.ac.jp?subject=2018年度前期授業評価アンケートについて">r-inquiry@ms.ie.u-ryukyu.ac.jp</a>
+</p>
+</div>
+</div>
+</body>
+
+</html>

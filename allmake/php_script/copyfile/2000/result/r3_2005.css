@@ -1,0 +1,49 @@
+body {
+	color: #000000;
+	background-color: #ffffff;
+	font: normal normal 10pt/140% sans-serif;
+}
+
+.topic {
+	padding: 8px 5px 3px 8px;
+	background-color: #ffffc0;
+	font-weight: bold;
+}
+
+.topic-content {
+	padding: 1px 8px 5px 8px;
+	font-size:1.1em;
+}
+
+.notice {
+	font: normal bold 12pt/140% serif;
+}
+
+.caution{
+	color:#ff3333;
+	font-size:1.2em;
+	font-family:monospace;
+}
+
+ul.menuber {
+	padding-left:1.1em;
+	margin-left:0px;	
+}
+
+#title {
+	padding: 1px 5px 1px 5px;
+	border: 2px solid #d0d0a0;
+	background-color: #ffffc0;
+	font: normal bold 14pt/140% serif;
+}
+
+#intro {
+	margin: 5px 10px 5px 10px;
+	padding: 1px 5px 1px 5px;
+	background-color: #fff0e0;
+	font: normal normal 10pt/140% serif;
+}
+
+#copyright {
+	font: italic normal 10pt/140% serif;
+}
