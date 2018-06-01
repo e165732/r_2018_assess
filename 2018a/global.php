@@ -85,7 +85,7 @@ function back(){
     define(NENDO,2018);
     $year = NENDO;
     echo "<hr>";
-    echo "<a href=\"https://mitsukawa-no-MacBook-Pro.local/assessment/\">R班トップページ</a>";
+    echo "<a href=\"https://host/assessment/\">R班トップページ</a>";
     echo "<p class=\"copyright\">";
     echo "$year 年度情報工学実験3 調査と解析(R)班<br>";
     echo "<a href=\"mailto:r-inquiry@ms.ie.u-ryukyu.ac.jp?subject=$year 年度前期授業評価アンケートについて\">r-inquiry@ms.ie.u-ryukyu.ac.jp</a>";
@@ -95,7 +95,7 @@ function back(){
 function back2($flag){
     echo "<hr>";
     if ($flag != 1) {
-        echo "<a href=\"https://mitsukawa-no-MacBook-Pro.local/assessment/\">R班トップページ</a>";
+        echo "<a href=\"https://host/assessment/\">R班トップページ</a>";
     }
     echo "<p class=\"copyright\">";
     echo "2018年度情報工学実験3 調査と解析(R)班<br>";
